@@ -8,20 +8,19 @@ nclude "main.h"
 void puts_half(char *str)
 {
 
-	int len = 0;
+	int n, m, len;
 
-	while (*str != '\0')
-	{
+	len = 0;
+
+	for (n = 0;str[n] != '\0'; n++)
 		len++;
-		str++;
-	}
 
-	str -= (len / 2);
-	while (*str != '\n')
-	{
-		_putchar(*str);
-		str++;
-	}
+	m = (len / 2);
 
+	if ((len % 2) == 1)
+		m = ((len + 1) / 2);
+
+	for (n = m; str[n] != '\0'; n++)
+		_putchar(str[n]);
 	_putchar('\n');
 }
