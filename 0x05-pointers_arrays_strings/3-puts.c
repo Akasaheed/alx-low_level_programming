@@ -5,7 +5,7 @@
  * @str: string to be printed
  * Return: string
  */
-vpid _puts(char *str)
+void _puts(char *str)
 {
 	int i;
 
