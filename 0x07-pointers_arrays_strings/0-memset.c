@@ -6,7 +6,7 @@
  * @n: n amount of times
  * Return: char value of s
  */
-ar *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
