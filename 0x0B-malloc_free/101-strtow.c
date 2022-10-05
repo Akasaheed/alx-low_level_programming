@@ -8,7 +8,6 @@
  *
  * @ac: argument count
  * @av: argument vector
- *
  * Return: a pointer to the concatenated array or NULL if the process fails
  */
 char *argstostr(int ac, char **av)
