@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * string_nconcat - a function that concatenates two strings.
+ * *string_nconcat - a function that concatenates two strings.
  * @s1 : pointer to string
  * @s2 : pointer to string
  * @n : integer
@@ -12,10 +12,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 
 
+
 	unsigned int x1, x2, i, j;
 	char *s;
 
 	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
 		s2 = "";
 	for (x1 = 0; s1[x1] != '\0'; x1++)
 	;
